@@ -19,3 +19,5 @@ vim.opt.updatetime = 50
 
 -- 80 char limit
 vim.opt.colorcolumn = "80"
+
+vim.opt.mouse = ""
