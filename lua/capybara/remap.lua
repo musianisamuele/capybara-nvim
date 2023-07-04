@@ -14,6 +14,9 @@ vim.keymap.set("n", "J", "mzJ`z")
 vim.keymap.set("n", "<C-d>", "<C-d>zz")
 vim.keymap.set("n", "<C-u>", "<C-u>zz")
 
+-- When splitting the screen the cursor move to the next windows
+vim.keymap.set("n", "<C-w>v", "<C-w>v<C-w>w")
+
 -- Make searched terms apper at the center
 vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
