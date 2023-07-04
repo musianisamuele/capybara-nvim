@@ -1,4 +1,7 @@
-# Must install
+# Capybara neovim config
+The one and only capybara config for neovim
+
+# Installation
 ## Packer
 [Packer](https://github.com/wbthomason/packer.nvim) is the plugin manager that is used to install all the others plugins.
 ```
