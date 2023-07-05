@@ -10,8 +10,9 @@ return require('packer').startup(function(use)
     }
 
     use {
-        'rose-pine/neovim', as = 'rose-pine'
+        'rose-pine/neovim', as = 'rose-pine',
     }
+    use { "ellisonleao/gruvbox.nvim" }
 
     use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
     use('mbbill/undotree')
