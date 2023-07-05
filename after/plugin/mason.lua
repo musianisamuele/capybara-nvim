@@ -7,6 +7,7 @@ local mason_lspconfig = require("mason-lspconfig").setup({
 		"cmake",  		-- CMake
 		"ansiblels",  		-- Ansible
 		"golangci_lint_ls", 	-- Go
+		"gopls", 	-- Go
 		"jdtls", 		-- Java
 		"texlab",		-- LaTeX
 		"lua_ls",		-- Lua
