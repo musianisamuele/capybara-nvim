@@ -17,15 +17,17 @@ return require('packer').startup(function(use)
     use('mbbill/undotree')
 
     use {
-        'neovim/nvim-lspconfig',  as = 'lspconfig',
-        { 'williamboman/mason.nvim',
+        'neovim/nvim-lspconfig', as = 'lspconfig',
+        {
+            'williamboman/mason.nvim',
             run = function()
                 pcall(vim.cmd, 'MasonUpdate')
-            end, },
+            end,
+        },
         'williamboman/mason-lspconfig.nvim',
-         'hrsh7th/nvim-cmp',
-         'hrsh7th/cmp-nvim-lsp',
-         'L3MON4D3/LuaSnip',
+        'hrsh7th/nvim-cmp',
+        'hrsh7th/cmp-nvim-lsp',
+        'L3MON4D3/LuaSnip',
     }
 
     use {
