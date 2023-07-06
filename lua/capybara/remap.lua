@@ -23,6 +23,7 @@ vim.keymap.set("n", "N", "Nzzzv")
 
 -- Make selection pase not rewrite the yank register
 vim.keymap.set("x", "p", "\"_dP")
+vim.keymap.set("x", "<leader>p", "p")
 
 -- Integration with system clipboard
 vim.keymap.set("n", "<leader>y", "\"+y")
