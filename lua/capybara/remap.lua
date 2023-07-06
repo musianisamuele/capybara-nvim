@@ -20,3 +20,11 @@ vim.keymap.set("n", "<C-w>v", "<C-w>v<C-w>w")
 -- Make searched terms apper at the center
 vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
+
+-- Make selection pase not rewrite the yank register
+vim.keymap.set("x", "p", "\"_dP")
+
+-- Integration with system clipboard
+vim.keymap.set("n", "<leader>y", "\"+y")
+vim.keymap.set("v", "<leader>y", "\"+y")
+vim.keymap.set("n", "<leader>Y", "\"+Y")
