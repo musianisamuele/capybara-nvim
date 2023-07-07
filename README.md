@@ -4,7 +4,7 @@ The one and only capybara config for neovim
                                  .;o,
         __."iIoi,._              ;pI __-"-xx.,_
       '.3"P3PPPoie-,.            .d' ';.     'p;
-     'O"dP"''''""'PdEe._       .;'   .     '  '|   NACK
+     'O"dP"''''""'PdEe._       .;'   .     '  '|   Fuck visimp
     "$#"'            ''"P4rdddsP'  .F.    ' '' ;  /
    i/"""     *"Sp.               .dPff.  _.,;Gw'
    ;l"'     "  'dp..            "sWf;fe|'
