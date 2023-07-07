@@ -1,19 +1,19 @@
 # Capybara neovim config
 The one and only capybara config for neovim
-
+```
                                  .;o,
         __."iIoi,._              ;pI __-"-xx.,_
-      `.3"P3PPPoie-,.            .d' `;.     `p;
-     `O"dP"````""`PdEe._       .;'   .     `  `|   NACK
-    "$#"'            ``"P4rdddsP'  .F.    ` `` ;  /
+      '.3"P3PPPoie-,.            .d' ';.     'p;
+     'O"dP"''''""'PdEe._       .;'   .     '  '|   NACK
+    "$#"'            ''"P4rdddsP'  .F.    ' '' ;  /
    i/"""     *"Sp.               .dPff.  _.,;Gw'
-   ;l"'     "  `dp..            "sWf;fe|'
-  `l;          .rPi .    . "" "dW;;doe;
-   $          .;PE`'       " "sW;.d.d;
-   $$        .$"`     `"saed;lW;.d.d.i
-   .$M       ;              ``  ' ld;.p.
-__ _`$o,.-__  "ei-Mu~,.__ ___ `_-dee3'o-ii~m. ____
-
+   ;l"'     "  'dp..            "sWf;fe|'
+  'l;          .rPi .    . "" "dW;;doe;
+   $          .;PE''       " "sW;.d.d;
+   $$        .$"'     '"saed;lW;.d.d.i
+   .$M       ;              ''  ' ld;.p.
+__ _'$o,.-__  "ei-Mu~,.__ ___ '_-dee3'o-ii~m. ____
+```
 
 ## Installation
 
