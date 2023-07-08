@@ -43,7 +43,8 @@ The followings are some of the most important:
 - `<Space>g` use `ripgrep` to search recursively for a regex in the current directory.
 - `<Space>b` list and select all the open buffers.
 - `<Space>e` expand a warnin or error message in a separate windonw.
-- `<Space>r` rename a symbol.
+- `<Space>r` rename a symbol with LSP.
+- `<Space>s` rename a symbol with the classic `%s`.
 - `K` expand a type or a function function signature (it's the lsp hover).
 - `gd` goto definition.
 - `<F3>` format the code.
