@@ -39,10 +39,10 @@ for the installation.
 $ sudo pacman -S ripgrep
 ```
 
-### capybara - nvim
+### Capybara config
 
 > **_NOTE:_**  If you already have a config for neovim you should backup it by 
-typing somthing similar to:
+typing something similar to:
 ```
 $ mv ~/.config/nvim ~/.config/nvim-old
 ```
@@ -51,7 +51,7 @@ loosing it compleatly.
 
 Now you can simply clone the repo in the `nvim` directory:
 ```
-git clone https://github.com/musianisamuele/capybara-nvim ~/.config/nvim
+$ git clone https://github.com/musianisamuele/capybara-nvim ~/.config/nvim
 ```
 
 ## Keybinds
