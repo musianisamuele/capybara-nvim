@@ -17,7 +17,11 @@ __ _'$o,.-__  "ei-Mu~,.__ ___ '_-dee3'o-ii~m. ____
 
 ## Installation
 
+In order to install and try this neovim config you have to first install `Packer`
+and `Ripgrep` (this is not mandatory but I highly suggeste to install it).
+
 ### Packer
+
 [Packer](https://github.com/wbthomason/packer.nvim) is the plugin manager that 
 is used to install all the others plugins.
 ```
@@ -26,10 +30,28 @@ $ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
 ```
 
 ### Ripgrep
+
 [Ripgrep](https://github.com/BurntSushi/ripgrep) is use to recursively search 
-for a regex pattern in the current directory. 
+for a regex pattern in the current directory. Note that the following command only
+works on Arch linux systems. Feel free to rely on you favourite package manager 
+for the installation.
 ```
 $ sudo pacman -S ripgrep
+```
+
+### capybara - nvim
+
+> **_NOTE:_**  If you already have a config for neovim you should backup it by 
+typing somthing similar to:
+```
+$ mv ~/.config/nvim ~/.config/nvim-old
+```
+Note that this method move your old config to a different directory to avoid 
+loosing it compleatly.
+
+Now you can simply clone the repo in the `nvim` directory:
+```
+git clone https://github.com/musianisamuele/capybara-nvim ~/.config/nvim
 ```
 
 ## Keybinds
@@ -45,7 +67,7 @@ The followings are some of the most important:
 - `<Space>e` expand a warnin or error message in a separate windonw.
 - `<Space>r` rename a symbol with LSP.
 - `<Space>s` rename a symbol with the classic `%s`.
-- `K` expand a type or a function function signature (it's the lsp hover).
+- `K` expand a type or a function signature (it's the lsp hover).
 - `gd` goto definition.
 - `<F3>` format the code.
 - `<Space>u` open the undo tree.
