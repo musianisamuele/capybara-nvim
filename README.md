@@ -53,6 +53,12 @@ Now you can simply clone the repo in the `nvim` directory:
 ```
 $ git clone https://github.com/musianisamuele/capybara-nvim ~/.config/nvim
 ```
+Now if you start neovim you will see a lot of errors. Get rid of they by pressing
+the `ESC` key. When you are finally inside neovim type:
+```
+:PackerSync
+```
+This will install all the plugins and get rid of the errors.
 
 ## Keybinds
 The majority of the remaps are in the `lua/capyabra/remap.lua` file. There are 
