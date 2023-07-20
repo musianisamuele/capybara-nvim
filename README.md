@@ -18,7 +18,7 @@ __ _'$o,.-__  "ei-Mu~,.__ ___ '_-dee3'o-ii~m. ____
 ## Installation
 
 In order to install and try this neovim config you have to first install `Packer`
-and `Ripgrep` (this is not mandatory but I highly suggeste to install it).
+and `Ripgrep` (this is not mandatory, but I highly suggest installing it).
 
 ### Packer
 
@@ -31,9 +31,9 @@ $ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
 
 ### Ripgrep
 
-[Ripgrep](https://github.com/BurntSushi/ripgrep) is use to recursively search 
+[Ripgrep](https://github.com/BurntSushi/ripgrep) is used to recursively search 
 for a regex pattern in the current directory. Note that the following command only
-works on Arch linux systems. Feel free to rely on you favourite package manager 
+works on Arch Linux systems. Feel free to rely on you favorite package manager 
 for the installation.
 ```
 $ sudo pacman -S ripgrep
@@ -41,19 +41,19 @@ $ sudo pacman -S ripgrep
 
 ### Capybara config
 
-> **_NOTE:_**  If you already have a config for neovim you should backup it by 
+> **_NOTE:_**  If you already have a config for neovim you should back up it by 
 typing something similar to:
 ```
 $ mv ~/.config/nvim ~/.config/nvim-old
 ```
 Note that this method move your old config to a different directory to avoid 
-loosing it compleatly.
+loosing it completely.
 
 Now you can simply clone the repo in the `nvim` directory:
 ```
 $ git clone https://github.com/musianisamuele/capybara-nvim ~/.config/nvim
 ```
-Now if you start neovim you will see a lot of errors. Get rid of they by pressing
+Now if you start neovim you will see a lot of errors. Get rid of them by pressing
 the `ESC` key. When you are finally inside neovim type:
 ```
 :PackerSync
@@ -70,11 +70,11 @@ The followings are some of the most important:
 - `<Space>F` search recursively for files under the current GIT directory.
 - `<Space>g` use `ripgrep` to search recursively for a regex in the current directory.
 - `<Space>b` list and select all the open buffers.
-- `<Space>e` expand a warnin or error message in a separate windonw.
+- `<Space>e` expand a warning or error message in a separate window.
 - `<Space>r` rename a symbol with LSP.
 - `<Space>s` rename a symbol with the classic `%s`.
 - `K` expand a type or a function signature (it's the lsp hover).
-- `gd` goto definition.
+- `gd` go to definition.
 - `<F3>` format the code.
 - `<Space>u` open the undo tree.
 - `<Space>y` copy the current selection into the system clipboard. This work in visual mode and with the `Y`, too.
