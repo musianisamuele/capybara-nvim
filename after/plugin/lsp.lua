@@ -31,3 +31,6 @@ require('mason-lspconfig').setup_handlers({
         })
     end,
 })
+
+-- Format on saving
+vim.cmd [[autocmd BufWritePre * lua vim.lsp.buf.format({sync = true})]]

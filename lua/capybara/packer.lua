@@ -37,4 +37,6 @@ return require('packer').startup(function(use)
             require('Comment').setup()
         end
     }
+
+    use "lukas-reineke/lsp-format.nvim"
 end)
