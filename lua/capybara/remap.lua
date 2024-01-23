@@ -16,6 +16,7 @@ vim.keymap.set("n", "<C-u>", "<C-u>zz")
 
 -- When splitting the screen the cursor move to the next windows
 vim.keymap.set("n", "<C-w>v", "<C-w>v<C-w>w")
+vim.keymap.set("n", "<C-w><C-v>", "<C-w>v<C-w>w") -- To avoid missclicks
 
 -- Make searched terms apper at the center
 vim.keymap.set("n", "n", "nzzzv")
