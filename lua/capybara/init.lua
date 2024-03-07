@@ -1,3 +1,3 @@
 require("capybara.remap")
-require("capybara.packer")
+require("capybara.lazy")
 require("capybara.settings")
