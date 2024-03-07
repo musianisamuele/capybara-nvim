@@ -68,6 +68,7 @@ require("lazy").setup({
 			-- vim.keymap.set('n', '<leader>sh', builtin.help_tags, { desc = '[S]earch [H]elp' })
 			-- vim.keymap.set('n', '<leader>sk', builtin.keymaps, { desc = '[S]earch [K]eymaps' })
 			vim.keymap.set("n", "<leader>f", builtin.find_files, { desc = "Search [F]iles" })
+			vim.keymap.set("n", "<leader>F", builtin.git_files, { desc = "Search [F]iles" })
 			-- vim.keymap.set('n', '<leader>ss', builtin.builtin, { desc = '[S]earch [S]elect Telescope' })
 			vim.keymap.set("n", "<leader>sw", builtin.grep_string, { desc = "[S]earch current [W]ord" })
 			vim.keymap.set("n", "<leader>g", builtin.live_grep, { desc = "Search by [G]rep" })
@@ -150,7 +151,7 @@ require("lazy").setup({
 
 					-- Rename the variable under your cursor
 					--  Most Language Servers support renaming across files, etc.
-					map("<leader>rn", vim.lsp.buf.rename, "[R]e[n]ame")
+					map("<leader>r", vim.lsp.buf.rename, "[R]e[n]ame")
 
 					-- Execute a code action, usually your cursor needs to be on top of an error
 					-- or a suggestion from your LSP for this to activate.
@@ -163,8 +164,6 @@ require("lazy").setup({
 					-- WARN: This is not Goto Definition, this is Goto Declaration.
 					--  For example, in C this would take you to the header
 					map("gD", vim.lsp.buf.declaration, "[G]oto [D]eclaration")
-
-					map("<leader>e", "<cmd>lua vim.diagnostic.open_float()<cr>", "open [E]rrors")
 				end,
 			})
 
