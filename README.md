@@ -17,30 +17,6 @@ __ _'$o,.-__  "ei-Mu~,.__ ___ '_-dee3'o-ii~m. ____
 
 ## Installation
 
-In order to install and try this neovim config you have to first install `Packer`
-and `Ripgrep` (this is not mandatory, but I highly suggest installing it).
-
-### Packer
-
-[Packer](https://github.com/wbthomason/packer.nvim) is the plugin manager that 
-is used to install all the others plugins.
-```
-$ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
- ~/.local/share/nvim/site/pack/packer/start/packer.nvim
-```
-
-### Ripgrep
-
-[Ripgrep](https://github.com/BurntSushi/ripgrep) is used to recursively search 
-for a regex pattern in the current directory. Note that the following command only
-works on Arch Linux systems. Feel free to rely on you favorite package manager 
-for the installation.
-```
-$ sudo pacman -S ripgrep
-```
-
-### Capybara config
-
 > **_NOTE:_**  If you already have a config for neovim you should back up it by 
 typing something similar to:
 ```
@@ -51,19 +27,12 @@ loosing it completely.
 
 Now you can simply clone the repo in the `nvim` directory:
 ```
-$ git clone https://github.com/musianisamuele/capybara-nvim ~/.config/nvim
+$ git clone --depth=1 https://github.com/musianisamuele/capybara-nvim ~/.config/nvim
 ```
-Now if you start neovim you will see a lot of errors. Get rid of them by pressing
-the `ESC` key. When you are finally inside neovim type:
-```
-:PackerSync
-```
-This will install all the plugins and get rid of the errors.
+Now if you start neovim everything should be installed automatically.
 
 ## Keybinds
-The majority of the remaps are in the `lua/capyabra/remap.lua` file. There are 
-some remaps that are tied to a particular plugin (ex. Telescope, LSP, ...) that 
-can be found under the `after/plugin` directory. 
+The majority of the remaps are in the `lua/capyabra/lazy.lua` file.
 
 The followings are some of the most important:
 - `<Space>f` search recursively for files under the current directory.
@@ -72,10 +41,7 @@ The followings are some of the most important:
 - `<Space>b` list and select all the open buffers.
 - `<Space>e` expand a warning or error message in a separate window.
 - `<Space>r` rename a symbol with LSP.
-- `<Space>s` rename a symbol with the classic `%s`.
 - `K` expand a type or a function signature (it's the lsp hover).
 - `gd` go to definition.
-- `<F3>` format the code.
-- `<Space>u` open the undo tree.
 - `<Space>y` copy the current selection into the system clipboard. This work in visual mode and with the `Y`, too.
 - `<Space>pv` open the vim file explorer.
