@@ -364,6 +364,10 @@ require("lazy").setup({
 			-- vim.cmd.hi 'Comment gui=none'
 		end,
 	},
+	{
+		"rose-pine/neovim",
+		name = "rose-pine",
+	},
 	{ -- Highlight, edit, and navigate code
 		"nvim-treesitter/nvim-treesitter",
 		build = ":TSUpdate",
