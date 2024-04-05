@@ -11,6 +11,7 @@ if not vim.loop.fs_stat(lazypath) then
 	})
 end
 vim.opt.rtp:prepend(lazypath)
+vim.opt.termguicolors = true -- For colorizer
 
 require("lazy").setup({
 	-- Smart and powerful comment plugin for neovim.
@@ -389,6 +390,12 @@ require("lazy").setup({
 			--    - Incremental selection: Included, see `:help nvim-treesitter-incremental-selection-mod`
 			--    - Show your current context: https://github.com/nvim-treesitter/nvim-treesitter-context
 			--    - Treesitter + textobjects: https://github.com/nvim-treesitter/nvim-treesitter-textobjects
+		end,
+	},
+	{
+		"norcalli/nvim-colorizer.lua",
+		config = function()
+			require("colorizer").setup()
 		end,
 	},
 })
