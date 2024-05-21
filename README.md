@@ -27,7 +27,7 @@ loosing it completely.
 
 Now you can simply clone the repo in the `nvim` directory:
 ```
-$ git clone --depth=1 https://github.com/musianisamuele/capybara-nvim ~/.config/nvim
+$ git clone --depth=1 https://github.com/samuelemusiani/capybara-nvim ~/.config/nvim
 ```
 Now if you start neovim everything should be installed automatically.
 
