@@ -15,7 +15,7 @@ vim.opt.termguicolors = true -- For colorizer
 
 require("lazy").setup({
 	-- Smart and powerful comment plugin for neovim.
-	{ "numToStr/Comment.nvim", opts = {} },
+	-- { "numToStr/Comment.nvim", opts = {} },
 
 	{ -- Fuzzy Finder (files, lsp, etc)
 		"nvim-telescope/telescope.nvim",
