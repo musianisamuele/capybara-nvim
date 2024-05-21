@@ -22,6 +22,10 @@ vim.opt.colorcolumn = "80"
 
 vim.opt.mouse = ""
 
-vim.opt.spelllang = "en_us";
+vim.opt.spelllang = "en_us"
 
 vim.opt.shortmess = "I"
+
+-- Remove comments when pressing 'o' if on a commented line
+vim.cmd("autocmd BufEnter * set formatoptions-=o")
+vim.cmd("autocmd BufEnter * setlocal formatoptions-=o")
