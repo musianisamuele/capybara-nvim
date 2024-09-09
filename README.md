@@ -32,6 +32,7 @@ $ git clone --depth=1 https://github.com/samuelemusiani/capybara-nvim ~/.config/
 Now if you start neovim everything should be installed automatically.
 
 ## Keybinds
+
 The majority of the remaps are in the `lua/capyabra/lazy.lua` file.
 
 The followings are some of the most important:
@@ -45,3 +46,10 @@ The followings are some of the most important:
 - `gd` go to definition.
 - `<Space>y` copy the current selection into the system clipboard. This work in visual mode and with the `Y`, too.
 - `<Space>pv` open the vim file explorer.
+
+## For rust
+
+In order to get help for rust std you need to install `rust-src`:
+```bash
+pacman -S rust-src
+```
